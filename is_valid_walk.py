@@ -1,6 +1,13 @@
+###this problem consist in, given a set of directons return if
+###in 10 steps we will return to the original position 
+
+
+##this solution consist in ennumerate the cuantiti of movements
+##to every side, calculating the final position
 def is_valid_walk(walk):
     position = [0,0]
     time = 10
+
 
     if len(walk) > time or len(walk) < time:
         print("should return False")
