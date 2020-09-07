@@ -1,8 +1,6 @@
 var isIsogram = require("./isogram");
 const { exportAllDeclaration } = require("@babel/types");
 
-console.log(isIsogram("hello"))
-
 const test_0 = "isogram";
 const test_1 = "aba";
 const test_2 = "hello";
