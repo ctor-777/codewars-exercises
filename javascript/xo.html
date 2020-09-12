@@ -1,0 +1,39 @@
+<script>
+    function XO(str) {
+        var xo = {
+            "x": 0,
+            "o": 0
+        };
+        str = str.toLowerCase();
+        for (var i = 0; i < str.length; i++) {
+            if (str[i] == "x") 
+                xo["x"] += 1;            
+            if (str[i] == "o") 
+                xo["o"] += 1;
+        }
+
+        return xo["x"] == xo["o"]
+    }
+
+    function XO2(str, keys, ignore_upper_case = true) {
+        if (ignore_upper_case)
+            str = str.toLowerCase();
+            console.log(typeof keys)
+            keys = keys.map(function lower(x) {
+                return x.toLowerCase();
+            });
+
+        var keys_object = {};
+        for (var i = 0; i< keys.length; i++) {
+            keys_object[keys[i]] = 0;
+        }
+
+        for (var i = 0; i < str.length; i++) {
+            if (keys.includes(str[i])) {
+                keys_object[str[i]] += 1;
+            }                        
+        }
+
+        return keys_object.values().every((currentValue, array) => array[0] == currentValue);
+    }
+</script>

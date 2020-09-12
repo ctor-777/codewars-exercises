@@ -1,4 +1,4 @@
-var toCamelCase = require("./string_to_camel_case");
+var toCamelCase = require("../string_to_camel_case");
 
 const separators = ["-", "_"];
 const test_0 = "";

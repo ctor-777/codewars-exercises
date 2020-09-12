@@ -1,4 +1,4 @@
-var isIsogram = require("./isogram");
+var isIsogram = require("../isogram");
 const { exportAllDeclaration } = require("@babel/types");
 
 const test_0 = "isogram";
