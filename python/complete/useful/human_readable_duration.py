@@ -1,5 +1,5 @@
 import warnings
-#This is a challenge from codewats, but as long as the stuff i made here
+#This is a challenge from codewars, but as long as the stuff i made here
 # is useful in other situations i adapted it to be useful.
 # aniway a part of this code is commented as any other challenge.  
 
